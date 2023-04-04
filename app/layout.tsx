@@ -8,7 +8,7 @@ import "./globals.css"
 
 import LoginModal from "@/app/components/modals/LoginModal"
 // import SearchModal from "@/app/components/modals/SearchModal"
-// import RentModal from "@/app/components/modals/RentModal"
+import RentModal from "@/app/components/modals/RentModal"
 import getCurrentUser from "./actions/getCurrentUser"
 
 export const metadata = {
@@ -34,6 +34,7 @@ export default async function RootLayout({
           <ToasterProvider />
           <LoginModal />
           <RegisterModal />
+          <RentModal/>
           <Navbar currentUser={currentUser} />
         </ClientOnly>
         <div>{children}</div>
