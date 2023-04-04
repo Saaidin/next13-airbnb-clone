@@ -1,4 +1,3 @@
-/*
 import prisma from "@/app/libs/prismadb";
 
 export interface IListingsParams {
@@ -95,4 +94,4 @@ export default async function getListings(
     throw new Error(error);
   }
 }
-*/
+
